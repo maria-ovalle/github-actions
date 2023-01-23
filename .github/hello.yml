@@ -1,0 +1,22 @@
+name: hello world
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Compile
+        run: make hello
+      - name: Run
+        run: ./hello
+
+    build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Compile
+        run: make hello
+      - name: Run
+        run: ./hello
