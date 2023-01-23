@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  build:
+  build1:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -13,7 +13,7 @@ jobs:
       - name: Run
         run: ./hello
 
-  build:
+  build2:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
